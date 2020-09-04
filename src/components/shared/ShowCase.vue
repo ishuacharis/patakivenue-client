@@ -4,16 +4,16 @@
             <div class="img__container">
                 <img src="../../assets/wallpaper.jpg" alt="wallpaper">
             </div>
-            <div class="container">
-                <div class="search">
-                    <form action="#">
+            <div class="search">
+                <div class="container">
+                    <form action="#" class="form">
                         <div class="field">
-                            <input type="text" name="what" id="what" placeholder="Enter your activity">
+                            <input type="text" name="what" class="input" id="what" placeholder="Enter your activity">
                         </div>
                         <div class="field">
-                            <input type="text" name="what" id="what">
+                            <input type="text" name="what" class="input" id="what">
                         </div>
-                        <div class="field">
+                        <div class="field btn__field">
                             <button class="secondary__bg-color">Search</button>
                         </div>
                     </form>
@@ -45,8 +45,6 @@ export default {
     .img__container{
         width: 100%;
         height: 40vh;
-        /*position: absolute;
-        top: 0;*/
     }
     .img__container img{
         width: 100%;
@@ -56,5 +54,30 @@ export default {
     .search{
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+    @media screen and (min-width: 768px){
+        .img__container {
+            height: 100vh;
+        }
+        .search{
+            position: absolute;
+            top: 60%;
+            left: 10%;
+            transform: translate(-10%, -60%);
+            width: 100%;
+        }
+        .form {
+            display: flex;
+            width: 100%;
+
+        }
+        .form .field{
+            width: calc(40% - 2rem);
+        }
+
+        .form .btn__field{
+            margin-left: 1rem;
+            width: calc(20% - 2rem);
+        }
     }
 </style>

@@ -4,8 +4,16 @@ const history = createWebHistory()
 export const router  =  createRouter({
     history,
     routes: [
-            { path: '/', 
+        { path: '/', 
             component: () => import('../components/index/Index.vue') 
-        }
+        },
+        {
+            path: '/register',
+            component: () => import('../components/register/Register.vue')
+        },
+        {
+            path: '/login',
+            component: () => import('../components/login/Login.vue')
+        },
     ]
 })

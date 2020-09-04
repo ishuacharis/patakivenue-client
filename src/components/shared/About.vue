@@ -6,8 +6,8 @@
                     <img src="../../assets/patakivenue_host.jpg" alt="" srcset="">
                 </div>
                 <div class="container">
-                    <h4 class="heading1">Why Patakivenue?</h4>
                     <div class="about__summary">
+                        <h4 class="heading1">Why Patakivenue?</h4>
                         <div class="about__summary-single">
                             <h6 class="heading6">Unique spaces</h6>
                             <p>
@@ -69,4 +69,17 @@ export default {
         font-size: 2rem;
         line-height: 1.5;
     }
+
+    @media screen and (min-width: 768px){
+        .about{ 
+            display: flex;
+            align-items: center;
+        }
+       .about__img{
+           height: 100vh;
+       }
+       .about__summary{
+           padding: 2rem;
+       }
+   }
 </style>

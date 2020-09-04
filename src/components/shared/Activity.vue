@@ -112,5 +112,9 @@
         text-align: center;
     }
 
-   
+   @media screen and (min-width: 768px){
+       .activity__single{
+            width: calc(33.333% - 1rem);   
+        }
+   }
 </style>

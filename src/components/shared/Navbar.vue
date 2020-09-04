@@ -17,7 +17,9 @@
                             <i class="fas fa-grip-lines-vertical"></i>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link secondary__link-color">Sign Up</a>
+                            <router-link to="/register" class="nav__link secondary__link-color">
+                                Sign Up
+                            </router-link>
                         </li>
                         <li @click="showNav" class="nav__item bars">
                             <i class="fas fa-bars"></i>
@@ -49,30 +51,33 @@
                         </ul>
                     </div>
                 </div>
-                <div class="sm-hide">
-                    <div class="left__nav">
-                        <ul>
-                            <li>
+                <div class="sm-hide nav__links">
+                    <div>
+                        <ul class="left__nav">
+                            <li class="logo">
                                 <a href="#">Patakivenue</a>
                             </li>
-                            <li>
-                                <a href="#">Search</a>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">
+                                    <i class="fas fa-search"></i>
+                                    Search
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="right__nav">
-                        <ul>
-                            <li>
-                                <a href="#">Activities</a>
+                    <div>
+                        <ul class="right__nav">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Activities</a>
                             </li>
-                            <li>
-                                <a href="#">List Space</a>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link space__btn">List Space</a>
                             </li>
-                            <li>
-                                <a href="#">Sign Up</a>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Sign Up</a>
                             </li>
-                            <li>
-                                <a href="#">Log In</a>
+                            <li class="nav__item">
+                                <router-link to="/login" class="nav__link">Log In</router-link>
                             </li>
                         </ul>
                     </div>
