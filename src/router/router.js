@@ -15,5 +15,9 @@ export const router  =  createRouter({
             path: '/login',
             component: () => import('../components/login/Login.vue')
         },
+        {
+            path: '/:catchAll(.*)',
+            component: () => import('../components/notFound/NotFound.vue')
+        },
     ]
 })
