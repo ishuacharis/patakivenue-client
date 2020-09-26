@@ -46,7 +46,6 @@ nav {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     position: relative;
-
 }
 
 .primary__text {
@@ -93,6 +92,7 @@ nav {
     border-radius: 0.5rem;
     border: 1px solid transparent;
     box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
 }
 .field .input:focus{
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
@@ -137,6 +137,10 @@ nav {
 }
 .heading6 {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.small-heading6{
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
 }
 
